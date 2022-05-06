@@ -1,0 +1,25 @@
+.home{
+    padding: 30px;   
+}
+.home .row{
+    min-height: 100vh;
+}
+.home .sidebar{ 
+    background: rgba(46, 123, 46, 0.498);
+    padding: 5px;
+}
+.home .chat{ 
+    background: rgba(227, 132, 159, 0.498);
+    padding: 5px; 
+}
+.home .chat h3{ text-align: start;padding: 10px 5px;}
+.home .chatList{ 
+    background: rgba(23, 8, 111, 0.498);
+    padding: 5px;
+}
+.home .chatText{ 
+    background: rgba(123, 73, 46, 0.498);
+}
+.home .profile{ 
+    background: rgba(185, 207, 15, 0.498);
+} 
