@@ -1,0 +1,27 @@
+.Dashboard .chat{ 
+    background: rgba(227, 132, 159, 0.498);
+    padding: 5px; 
+}
+.Dashboard .chat h3{ text-align: start;padding: 10px 5px;}
+.Dashboard .chatList{ 
+    background: rgba(23, 8, 111, 0.498);
+    padding: 5px;
+}
+.Dashboard .chatText{ 
+    background: rgba(123, 73, 46, 0.498);
+}
+.Dashboard .profile{ 
+    /* background: rgba(185, 207, 15, 0.498); */ 
+    padding: 0px 25px;
+} 
+.Dashboard .profile .body{ 
+    padding: 20px calc(5px + (50 - 5) * ((100vw - 1000px) / (1900 - 300)));
+    margin: 5px;
+    border-radius: 5px;
+    /* border:1px solid red;  */
+    box-shadow: 4px 3px 10px #e4d8d882;
+} 
+.Dashboard .profile .contactInfo{ 
+ text-align: start;
+ margin: 20px 0px;
+} 
