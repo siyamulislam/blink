@@ -18,10 +18,10 @@ const Home = () => {
                 <div className="chat col-md-8">
                     <h3>Message</h3>
                     <div className="row gx-1">
-                        <div className="chatList col-md-5">
+                        <div className="chatList col-md-4">
                             <input type="text" placeholder='Search People or Message' />
                         </div>
-                        <div className="chatText col-md-7">
+                        <div className="chatText col-md-8">
                             <h4>Anna</h4>
                         </div>
                     </div>  
