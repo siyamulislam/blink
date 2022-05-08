@@ -2,7 +2,7 @@
     padding: 10px 10px;   
 }
 .home .row{
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .home .sidebar{ 
     background: #F7F8FC;

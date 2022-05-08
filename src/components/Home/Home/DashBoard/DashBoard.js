@@ -5,10 +5,44 @@ const DashBoard = () => {
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
-                <h3>Message</h3>
+                <h1 className='py-4'>Messages</h1>
                 <div className="row gx-1">
                     <div className="chatList col-md-4">
-                        <input type="text" placeholder='Search People or Message' />
+                        <input type="text" className='search' placeholder='Search People or Message' />
+                        <div className="chatType d-flex justify-content-between my-4">
+                            <h4>icon</h4>
+                            <h4>icon</h4>
+                            <h4>icon</h4>
+                        </div>
+                        <div className="chatItemCard  d-flex justify-content-around text-start">
+                            <img src={logo} width='80px' alt="" />
+                            <div className="chatItemInfo">
+                                <h6>Anna Morgan</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                       
+                        <div className="chatItemCard  d-flex justify-content-around text-start">
+                            <img src={logo} width='80px' alt="" />
+                            <div className="chatItemInfo">
+                                <h6>Anna Morgan</h6>
+                                <p>Lorem ipsum dtetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div className="chatItemCard  d-flex justify-content-around text-start">
+                            <img src={logo} width='80px' alt="" />
+                            <div className="chatItemInfo">
+                                <h6>Anna Morgan</h6>
+                                <p>Lorem ipsum dolor sit amet cing elit.</p>
+                            </div>
+                        </div>
+                        <div className="chatItemCard  d-flex justify-content-around text-start">
+                            <img src={logo} width='80px' alt="" />
+                            <div className="chatItemInfo">
+                                <h6>Anna Morgan</h6>
+                                <p>Lorem ipsum dolor sit amet csicing elit.</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="chatText col-md-8">
                         <h4>Anna</h4>
@@ -20,7 +54,7 @@ const DashBoard = () => {
             <div className="profile col-md-4">
                 <div className="d-flex justify-content-end p-2">
                     <h5>Bell</h5>
-                    <h3>Profile</h3>
+                    <h1>Profile</h1>
                 </div>
                 <div className="body">
                     <img src={logo} width='100px' alt="" />

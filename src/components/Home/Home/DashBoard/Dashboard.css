@@ -1,14 +1,30 @@
 .Dashboard .chat{ 
-    background: rgba(227, 132, 159, 0.498);
+    /* background: rgba(227, 132, 159, 0.498); */
     padding: 5px; 
 }
-.Dashboard .chat h3{ text-align: start;padding: 10px 5px;}
+.Dashboard .chat h1{ text-align: start;padding: 10px 5px;}
 .Dashboard .chatList{ 
-    background: rgba(23, 8, 111, 0.498);
-    padding: 5px;
+    /* background: rgba(23, 8, 111, 0.498); */
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px #cac5c582;
+    height: 80vh;
+}
+.Dashboard .chatList p{ 
+  color: #BEBEBE;
+}
+.Dashboard .chat h6, h4{ 
+  color: #373737;
+}
+.Dashboard .chatList .search{ 
+    width: 100%;
+    background-color: #e4d8d882;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
 }
 .Dashboard .chatText{ 
-    background: rgba(123, 73, 46, 0.498);
+    /* background: rgba(123, 73, 46, 0.498); */
 }
 .Dashboard .profile{ 
     /* background: rgba(185, 207, 15, 0.498); */ 
