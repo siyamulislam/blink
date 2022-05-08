@@ -5,7 +5,7 @@ const DashBoard = () => {
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
-                <h1 className='py-4'>Messages</h1>
+                <h1 className='py-3'>Messages</h1>
                 <div className="row gx-1">
                     <div className="chatList col-md-4">
                         <input type="text" className='search' placeholder='Search People or Message' />
