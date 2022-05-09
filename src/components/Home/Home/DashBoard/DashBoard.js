@@ -14,29 +14,29 @@ const DashBoard = () => {
                             <h4>icon</h4>
                             <h4>icon</h4>
                         </div>
-                        <div className="chatItemCard  d-flex justify-content-around text-start">
+                        <div className="chatItemCard  d-flex justify-content-around">
                             <img src={logo} width='80px' alt="" />
                             <div className="chatItemInfo">
                                 <h6>Anna Morgan</h6>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                       
-                        <div className="chatItemCard  d-flex justify-content-around text-start">
+
+                        <div className="chatItemCard  d-flex justify-content-around">
                             <img src={logo} width='80px' alt="" />
                             <div className="chatItemInfo">
                                 <h6>Anna Morgan</h6>
                                 <p>Lorem ipsum dtetur adipisicing elit.</p>
                             </div>
                         </div>
-                        <div className="chatItemCard  d-flex justify-content-around text-start">
+                        <div className="chatItemCard  d-flex justify-content-around">
                             <img src={logo} width='80px' alt="" />
                             <div className="chatItemInfo">
                                 <h6>Anna Morgan</h6>
                                 <p>Lorem ipsum dolor sit amet cing elit.</p>
                             </div>
                         </div>
-                        <div className="chatItemCard  d-flex justify-content-around text-start">
+                        <div className="chatItemCard  d-flex justify-content-around">
                             <img src={logo} width='80px' alt="" />
                             <div className="chatItemInfo">
                                 <h6>Anna Morgan</h6>
@@ -45,7 +45,16 @@ const DashBoard = () => {
                         </div>
                     </div>
                     <div className="chatText col-md-8">
-                        <h4>Anna</h4>
+                        <div className="chatUserCard d-flex justify-content-between align-items-center">
+                            <div className="userInfo d-flex justify-content-start ">
+                                <img src={logo} width='80px' alt="" />
+                                <div className="chatItemInfo">
+                                    <h6>Anna Morgan</h6>
+                                    <p>o Online</p>
+                                </div>
+                            </div>
+                            <h3>:</h3>
+                        </div>
                     </div>
                 </div>
             </div>

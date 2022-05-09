@@ -11,9 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a{
+  text-decoration: none;
+}
+ul , dl,ol{list-style: none;}
+
 hr{
   margin: 0.2rem !important;
 }
 .bg-main{
   background-color: #F1F3F5; 
+}
+p,h6{
+  margin: 0px !important;
 }

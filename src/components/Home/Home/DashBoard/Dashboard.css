@@ -1,8 +1,9 @@
 .Dashboard .chat{ 
     /* background: rgba(227, 132, 159, 0.498); */
     padding: 5px; 
+    text-align: start;
 }
-.Dashboard .chat h1{ text-align: start;padding: 10px 5px;}
+.Dashboard .chat h1{padding: 10px 5px;}
 .Dashboard .chatList{ 
     /* background: rgba(23, 8, 111, 0.498); */
     padding: 8px;
@@ -12,10 +13,13 @@
 }
 .Dashboard .chatList p{ 
   color: #BEBEBE;
+  font-size: 15px; 
 }
 .Dashboard .chat h6, h4{ 
-  color: #373737;
+  color: #373737; 
+  width: 100%;
 }
+
 .Dashboard .chatList .search{ 
     width: 100%;
     background-color: #e4d8d882;
@@ -26,6 +30,18 @@
 .Dashboard .chatText{ 
     /* background: rgba(123, 73, 46, 0.498); */
 }
+.Dashboard .chatText .chatUserCard{
+    margin: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px  #cac5c582;
+    }
+    .Dashboard .chatText .chatItemInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: flex-start;
+    }
 .Dashboard .profile{ 
     /* background: rgba(185, 207, 15, 0.498); */ 
     padding: 0px 25px;
@@ -35,7 +51,7 @@
     margin: 5px;
     border-radius: 5px;
     /* border:1px solid red;  */
-    box-shadow: 4px 3px 10px #e4d8d882;
+    box-shadow: 5px 5px 50px #e4d8d882;
 } 
 .Dashboard .profile .contactInfo{ 
  text-align: start;
