@@ -186,5 +186,12 @@ h4 {
 
 .Dashboard .profile .contactInfo {
     text-align: start;
-    margin: 20px 0px;
+    margin: 20px 0px !important;
 }
+
+.Dashboard .profile .contactInfo p,.Dashboard .profile .attachmentInfo p {
+   padding: 8px 0px;
+}
+.Dashboard .profile .attachmentInfo { 
+    margin: 20px 0px !important; }
+  

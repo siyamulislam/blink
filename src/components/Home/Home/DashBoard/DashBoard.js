@@ -142,25 +142,28 @@ const DashBoard = () => {
                 <div className="body">
                     <img src={logo} width='100px' alt="" />
                     <h5>Anna Morgan</h5>
-                    <h6>Co-Worker</h6>
+                    <h6 className='m-2'>Co-Worker</h6>
                     <p>Dhaka, Bangladesh</p>
                     <div className='bg-main my-2'>
-                        <p className='p-1'>More Information  </p>
+                        <p className='p-1   m-4'>More Information  </p>
                     </div>
                     <div className="contactInfo ">
-                        <div className='d-flex justify-content-between'>
+                        <div className='d-flex justify-content-between align-items-center'>
                             <h6 className='text-align-start'>Contact Information </h6>
                             <p className='text-primary'>add new</p>
                         </div>
                         <hr />
-                        <p><span>i-con</span> annamorgan@gmail.com</p>
+                      <div className="my-2">
+                      <p><span>i-con</span> annamorgan@gmail.com</p>
                         <p><span>i-con</span> +88017170000000</p>
                         <p><span>i-con</span> annaMorgan1</p>
+                      </div>
                         <hr />
                     </div>
-                    <div className="AttachmentsInfo">
-                        <div className='d-flex justify-content-between'>
-                            <h6 className='text-align-start'>Attachments (100)</h6>
+                    
+                    <div className="attachmentInfo">
+                        <div className='d-flex justify-content-between align-items-center'>
+                            <h6 className='text-align-start '>Attachments (100)</h6>
                             <p className='text-primary'>view all</p>
                         </div>
                         <hr />
@@ -170,6 +173,7 @@ const DashBoard = () => {
                         <img src={logo} width='100px' alt="" />
                         <img src={logo} width='100px' alt="" />
                         <img src={logo} width='100px' alt="" />
+                        <hr />
                     </div>
                 </div>
             </div>
