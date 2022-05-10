@@ -27,9 +27,9 @@
     border-radius: 3px;
     border: none;
 }
-.Dashboard .chatText{ 
-    /* background: rgba(123, 73, 46, 0.498); */
-}
+/* .Dashboard .chatText{ 
+     background: rgba(123, 73, 46, 0.498); 
+} */
 .Dashboard .chatText .chatUserCard{
     margin: 20px;
     padding: 5px 20px;

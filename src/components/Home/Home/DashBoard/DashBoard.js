@@ -1,6 +1,8 @@
 import React from 'react';
 import './Dashboard.css'
 import logo from './../../../../logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane, } from '@fortawesome/free-solid-svg-icons'; 
 const DashBoard = () => {
     return (
         <div className='Dashboard row'>
@@ -54,6 +56,11 @@ const DashBoard = () => {
                                 </div>
                             </div>
                             <h3>:</h3>
+                        </div>
+                        <div className="sendCard">
+                        <FontAwesomeIcon icon={faPaperPlane} />
+                        <FontAwesomeIcon icon="fa-solid fa-paper-plane" />
+                        <i class="fa-solid fa-paper-plane-top"></i>
                         </div>
                     </div>
                 </div>
