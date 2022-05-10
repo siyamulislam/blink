@@ -2,7 +2,7 @@ import React from 'react';
 import './Dashboard.css'
 import logo from './../../../../logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, } from '@fortawesome/free-solid-svg-icons'; 
+import { faPaperPlane, faFileAlt, } from '@fortawesome/free-solid-svg-icons';
 const DashBoard = () => {
     return (
         <div className='Dashboard row'>
@@ -57,11 +57,50 @@ const DashBoard = () => {
                             </div>
                             <h3>:</h3>
                         </div>
-                        <div className="sendCard">
-                        <FontAwesomeIcon icon={faPaperPlane} />
-                        <FontAwesomeIcon icon="fa-solid fa-paper-plane" />
-                        <i class="fa-solid fa-paper-plane-top"></i>
+                        <div className="messageCard">
+                            <div className="messageBody">
+                                <div className="lastSeen d-flex justify-content-between align-items-center">
+                                    <hr /><p className='text-main'>Today</p><hr />
+                                </div>
+                                <div className="senderCard">
+                                    <div className="senderBody">
+                                        <img src={logo} className="align-self-end" width="40px" alt="" />
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odit corrupti nostrum quaerat facilis unde?</p>
+                                        <h2 className='text-main align-self-end'>...</h2>
+                                    </div>
+                                    <p>10:34 PM</p>
+                                </div>
+                                <div className="senderCard">
+                                    <div className="senderBody">
+                                        <img src={logo} className="align-self-end" width="40px" alt="" />
+                                        <p>Lorem ips unde?</p>
+                                        <h2 className='text-main align-self-end'>...</h2>
+                                    </div>
+                                    <p>10:34 PM</p>
+                                </div>
+                                
+                                <div className="receiverCard">
+
+                                </div>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                                <h1>fddf</h1>
+                            </div>
+                            <div className="sendCard">
+                                <textarea placeholder='text message' cols="3" rows="1" className='messageText'></textarea>
+                                <FontAwesomeIcon className='fileIcon ' icon={faFileAlt} />
+                                <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} />
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

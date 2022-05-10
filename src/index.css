@@ -22,6 +22,12 @@ hr{
 .bg-main{
   background-color: #F1F3F5; 
 }
+.text-main{
+  color: #A3A9B7; 
+}
 p,h6{
   margin: 0px !important;
+}
+::-webkit-scrollbar {
+  display: none;
 }

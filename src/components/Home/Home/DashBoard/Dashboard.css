@@ -1,59 +1,150 @@
-.Dashboard .chat{ 
+.Dashboard .chat {
     /* background: rgba(227, 132, 159, 0.498); */
-    padding: 5px; 
+    padding: 5px;
     text-align: start;
 }
-.Dashboard .chat h1{padding: 10px 5px;}
-.Dashboard .chatList{ 
+
+.Dashboard .chat h1 {
+    padding: 10px 5px;
+}
+
+.Dashboard .chatList {
     /* background: rgba(23, 8, 111, 0.498); */
     padding: 8px;
     border-radius: 10px;
     box-shadow: 8px 8px 15px #cac5c582;
     height: 80vh;
 }
-.Dashboard .chatList p{ 
-  color: #BEBEBE;
-  font-size: 15px; 
-}
-.Dashboard .chat h6, h4{ 
-  color: #373737; 
-  width: 100%;
+
+.Dashboard .chat p {
+    color: #A3A9B7;
+    font-size: 15px;
 }
 
-.Dashboard .chatList .search{ 
+.Dashboard .chat h6,
+h4 {
+    color: #373737;
+    width: 100%;
+}
+
+.Dashboard .chatList .search {
     width: 100%;
     background-color: #e4d8d882;
     padding: 8px;
     border-radius: 3px;
     border: none;
 }
+
 /* .Dashboard .chatText{ 
      background: rgba(123, 73, 46, 0.498); 
 } */
-.Dashboard .chatText .chatUserCard{
-    margin: 20px;
+.Dashboard .chatText .chatUserCard {
+    margin: 25px;
     padding: 5px 20px;
     border-radius: 10px;
-    box-shadow: 10px 10px 40px  #cac5c582;
-    }
-    .Dashboard .chatText .chatItemInfo{
+    box-shadow: 10px 10px 40px #cac5c582;
+}
+
+.Dashboard .chatText .chatItemInfo {
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
     align-items: flex-start;
-    }
-.Dashboard .profile{ 
-    /* background: rgba(185, 207, 15, 0.498); */ 
-    padding: 0px 25px;
+}
+
+.Dashboard .chatText .messageCard {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(160, 18, 18, 0.253);
+    height: 65vh;
+    justify-content: end;
+}
+
+.Dashboard .chatText .messageBody {
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.Dashboard .chatText .messageBody .senderCard {
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.Dashboard .chatText .messageBody .senderCard p{ 
+    padding-left: 42px; 
+}
+.Dashboard .chatText .messageBody .senderCard .senderBody {
+    display: flex;
+    justify-content: center;
+}
+
+.Dashboard .chatText .messageBody .senderCard .senderBody p {
+    color: #373737;
+    padding: 15px 20px;
+    background-color: #F1F3F5;
+    border-radius: 15px;
+    margin-right: 10px !important;
 } 
-.Dashboard .profile .body{ 
+
+.Dashboard .chatText .messageBody .lastSeen hr {
+    border: 1px solid #A7ACBA;
+    width: 15vw;
+}
+
+.Dashboard .chatText .sendCard {
+    display: flex;
+    justify-content: end;
+    padding: 15px 0px;
+
+}
+
+.Dashboard .chatText .sendCard .messageText {
+    color: #A7ACBA;
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 22 px;
+    margin: 0px 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.Dashboard .chatText .sendCard .fileIcon {
+    color: #A7ACBA;
+    padding: 15px;
+    font-size: 25px;
+    margin-right: 20px;
+    align-self: flex-end;
+}
+
+.Dashboard .chatText .sendCard .sendIcon {
+    color: white;
+    background-image: linear-gradient(#F73C65, #F5493D);
+    padding: 14px;
+    font-size: 25px;
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+/* //////////////////////PROFILE///////////////////////////// */
+.Dashboard .profile {
+    /* background: rgba(185, 207, 15, 0.498); */
+    padding: 0px 25px;
+}
+
+.Dashboard .profile .body {
     padding: 20px calc(5px + (50 - 5) * ((100vw - 1000px) / (1900 - 300)));
     margin: 5px;
     border-radius: 5px;
     /* border:1px solid red;  */
     box-shadow: 5px 5px 50px #e4d8d882;
-} 
-.Dashboard .profile .contactInfo{ 
- text-align: start;
- margin: 20px 0px;
-} 
+}
+
+.Dashboard .profile .contactInfo {
+    text-align: start;
+    margin: 20px 0px;
+}
