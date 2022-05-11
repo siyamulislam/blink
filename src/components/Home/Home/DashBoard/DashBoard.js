@@ -2,19 +2,24 @@ import React from 'react';
 import './Dashboard.css'
 import logo from './../../../../logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt, } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faFileAlt,faUserFriends,faCog,faUser } from '@fortawesome/free-solid-svg-icons'; 
+import { faBell,  } from '@fortawesome/free-regular-svg-icons';
+ 
+ 
 const DashBoard = () => {
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
-                <h1 className='py-3'>Messages</h1>
+                <h1 className='py-3'>Messages</h1> 
                 <div className="row gx-1">
                     <div className="chatList col-md-4">
                         <input type="text" className='search' placeholder='Search People or Message' />
-                        <div className="chatType d-flex justify-content-between my-4">
-                            <h4>icon</h4>
-                            <h4>icon</h4>
-                            <h4>icon</h4>
+                        <div className="chatType d-flex justify-content-around my-4">
+                           <FontAwesomeIcon className='chatTypeIcon userIcon' icon={faUser}/>
+                           <FontAwesomeIcon className='chatTypeIcon  ' icon={faUserFriends}/>
+                           <FontAwesomeIcon className='chatTypeIcon  ' icon={faCog}/>  
+                           <div>  
+  </div>
                         </div>
 
 
@@ -126,6 +131,7 @@ const DashBoard = () => {
                                 <textarea placeholder='text message' cols="40" rows="1" className='messageText'></textarea>
                                 <FontAwesomeIcon className='fileIcon ' icon={faFileAlt} />
                                 <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} />
+                                <FontAwesomeIcon className='sendIcon' icon="fas fa-cog"  />
                             </div>
                         </div>
 
@@ -136,7 +142,7 @@ const DashBoard = () => {
 
             <div className="profile col-md-4">
                 <div className="d-flex justify-content-end p-2">
-                    <h5>Bell</h5>
+                    <FontAwesomeIcon icon={faBell}/>
                     <h1>Profile</h1>
                 </div>
                 <div className="body">

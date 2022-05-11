@@ -53,6 +53,16 @@ h4 {
 }
 .Dashboard .chatList .chatItemCard .chatItemInfo p small{
     font-size: 9px;  
+} 
+.Dashboard .chatList .chatTypeIcon{
+    font-size: 18px;
+    color: #373737;
+    border-radius: 10px;
+    padding: 12px;
+}
+.Dashboard .chatList .userIcon{ 
+    color: #fffcfc;
+    background-image: linear-gradient(#F73C65, #F5493D);
 }
 .Dashboard .chatText .chatItemInfo p, .chatList .chatItemCard .chatItemInfo p {
     font-size: 13px;  

@@ -8,3 +8,16 @@
     background: #F7F8FC;
     padding: 5px;
 }
+.home .sidebar .sidebarIcon{ 
+    display: block;
+    margin: auto;
+    color: #CED1DA;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.home .sidebar .messageIcon {  
+    background-image: linear-gradient(#F73C65, #F5493D);
+    color: white;
+}
