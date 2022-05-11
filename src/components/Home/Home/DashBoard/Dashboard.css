@@ -35,19 +35,19 @@ h4 {
     border: none;
 }
 
-/* .Dashboard .chatText{ 
-     background: rgba(123, 73, 46, 0.498); 
-} */
-.Dashboard  .chatText .chatUserCard {
+.Dashboard .chatText .chatUserCard {
     margin: 25px;
     padding: 5px 20px;
     border-radius: 10px;
-    box-shadow: 10px 10px 40px #cac5c582;  
+    box-shadow: 10px 10px 40px #cac5c582;
 }
-.Dashboard .chatText .chatUserCard  img{ border-radius: 50%;
+
+.Dashboard .chatText .chatUserCard img {
+    border-radius: 50%;
     margin: 5px;
 }
-.Dashboard .chatText .chatUserCard  span{ 
+
+.Dashboard .chatText .chatUserCard span {
     font-size: 50px;
     color: green;
     line-height: 0;
@@ -59,31 +59,37 @@ h4 {
     justify-content: center;
     align-items: flex-start;
 }
-.Dashboard .chatList .chatItemCard .chatItemInfo p small{
-    font-size: 9px;  
-} 
-.Dashboard .chatList .chatItemCard img{
+
+.Dashboard .chatList .chatItemCard .chatItemInfo p small {
+    font-size: 9px;
+}
+
+.Dashboard .chatList .chatItemCard img {
     border-radius: 50%;
     margin: 5x;
-} 
-.Dashboard .chatList .chatTypeIcon{
+}
+
+.Dashboard .chatList .chatTypeIcon {
     font-size: 18px;
     color: #373737;
     border-radius: 10px;
     padding: 12px;
 }
-.Dashboard .chatList .userIcon{ 
+
+.Dashboard .chatList .userIcon {
     color: #fffcfc;
     background-image: linear-gradient(#F73C65, #F5493D);
 }
-.Dashboard .chatText .chatItemInfo p, .chatList .chatItemCard .chatItemInfo p {
-    font-size: 13px;  
+
+.Dashboard .chatText .chatItemInfo p,
+.chatList .chatItemCard .chatItemInfo p {
+    font-size: 13px;
 }
 
 .Dashboard .chatText .messageCard {
     margin: 25px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     height: 65vh;
     justify-content: end;
 }
@@ -93,6 +99,7 @@ h4 {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 .Dashboard .chatText .messageBody img {
     border-radius: 50%;
 }
@@ -151,9 +158,9 @@ h4 {
 
 .Dashboard .chatText .messageBody .receiverCard .receiverBody p {
     color: #FFFCFC;
-    padding: 15px 20px; 
+    padding: 15px 20px;
     border-radius: 15px;
-    background-image: linear-gradient( to right ,#F73C65, #F5493D);
+    background-image: linear-gradient(to right, #F73C65, #F5493D);
     margin-left: 10px !important;
 }
 
@@ -201,9 +208,10 @@ h4 {
     /* background: rgba(185, 207, 15, 0.498); */
     padding: 0px 25px;
 }
-.Dashboard .profile  .top img{ 
-margin-left: 25px;
-border-radius: 12px;
+
+.Dashboard .profile .top img {
+    margin-left: 25px;
+    border-radius: 12px;
 }
 
 .Dashboard .profile .body {
@@ -213,9 +221,10 @@ border-radius: 12px;
     /* border:1px solid red;  */
     box-shadow: 5px 5px 50px #e4d8d882;
 }
+
 .Dashboard .profile .body img {
-   border-radius: 50%;
-   margin-bottom: 15px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .Dashboard .profile .contactInfo {
@@ -223,9 +232,11 @@ border-radius: 12px;
     margin: 20px 0px !important;
 }
 
-.Dashboard .profile .contactInfo p,.Dashboard .profile .attachmentInfo p {
-   padding: 8px 0px;
+.Dashboard .profile .contactInfo p,
+.Dashboard .profile .attachmentInfo p {
+    padding: 8px 0px;
 }
-.Dashboard .profile .attachmentInfo { 
-    margin: 20px 0px !important; }
-  
+
+.Dashboard .profile .attachmentInfo {
+    margin: 20px 0px !important;
+}

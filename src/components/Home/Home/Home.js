@@ -1,5 +1,5 @@
- import { faMessageSd,faUser,faStar,faCalendarCheck} from '@fortawesome/free-solid-svg-icons';
-import { faMessage,faCommentDots } from '@fortawesome/free-regular-svg-icons';
+ import {faUser,faStar,faCalendarCheck} from '@fortawesome/free-solid-svg-icons';
+import {faCommentDots } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import React from 'react';
 import DashBoard from './DashBoard/DashBoard';
@@ -20,9 +20,6 @@ const Home = () => {
                <DashBoard></DashBoard>
                </div>
             </div>
-
-
-
         </section>
     );
 };

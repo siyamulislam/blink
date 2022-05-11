@@ -4,26 +4,24 @@ import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt,faUserFriends,faCog,faUser,faCircleDot,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'; 
-import { faBell,    } from '@fortawesome/free-regular-svg-icons';
- 
- 
+import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot } from '@fortawesome/free-solid-svg-icons';
+import { faBell, } from '@fortawesome/free-regular-svg-icons';
+
 const DashBoard = () => {
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
-                <h1 className='py-3'>Messages</h1> 
+                <h1 className='py-3'>Messages</h1>
                 <div className="row gx-1">
                     <div className="chatList col-md-4">
                         <input type="text" className='search' placeholder='&#x1F50E;&#xFE0E; Search People or Message' />
                         <div className="chatType d-flex justify-content-around my-4">
-                           <FontAwesomeIcon className='chatTypeIcon userIcon' icon={faUser}/>
-                           <FontAwesomeIcon className='chatTypeIcon  ' icon={faUserFriends}/>
-                           <FontAwesomeIcon className='chatTypeIcon  ' icon={faCog}/>  
-                           <div>  
-  </div>
-                        </div>
-
+                            <FontAwesomeIcon className='chatTypeIcon userIcon' icon={faUser} />
+                            <FontAwesomeIcon className='chatTypeIcon  ' icon={faUserFriends} />
+                            <FontAwesomeIcon className='chatTypeIcon  ' icon={faCog} />
+                            <div>
+                            </div>
+                        </div> 
 
                         <div className="chatItemCard  d-flex justify-content-around align-items-center">
                             <img src={userAnna} width='50px' alt="" />
@@ -65,8 +63,6 @@ const DashBoard = () => {
                                 <p>Lorem ipsum dolor sit amet csicing elit.</p>
                             </div>
                         </div>
-
-
                     </div>
                     <div className="chatText col-md-8">
                         <div className="chatUserCard d-flex justify-content-between align-items-center">
@@ -74,7 +70,7 @@ const DashBoard = () => {
                                 <img src={userAnna} width='50px' alt="" />
                                 <div className="chatItemInfo">
                                     <h6>Anna Morgan</h6>
-                                    <p><FontAwesomeIcon icon={faCircleDot} size='xs' color='green'/> Online</p>
+                                    <p><FontAwesomeIcon icon={faCircleDot} size='xs' color='green' /> Online</p>
                                 </div>
                             </div>
                             <h3>:</h3>
@@ -133,7 +129,7 @@ const DashBoard = () => {
                                 <textarea placeholder='text message' cols="40" rows="1" className='messageText'></textarea>
                                 <FontAwesomeIcon className='fileIcon ' icon={faFileAlt} />
                                 <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} />
-                                <FontAwesomeIcon className='sendIcon' icon="fas fa-cog"  />
+                                <FontAwesomeIcon className='sendIcon' icon="fas fa-cog" />
                             </div>
                         </div>
 
@@ -141,11 +137,10 @@ const DashBoard = () => {
                 </div>
             </div>
 
-
             <div className="profile col-md-4">
                 <div className="top d-flex justify-content-end  align-items-center p-2">
                     <FontAwesomeIcon icon={faBell} />
-                    <img src={user}   width='50px' alt="" />
+                    <img src={user} width='50px' alt="" />
                 </div>
                 <div className="body">
                     <img src={userAnna} width='100px' alt="" />
@@ -161,14 +156,14 @@ const DashBoard = () => {
                             <p className='text-primary'>add new</p>
                         </div>
                         <hr />
-                      <div className="my-2">
-                      <p><span>i-con</span> annamorgan@gmail.com</p>
-                        <p><span>i-con</span> +88017170000000</p>
-                        <p><span>i-con</span> annaMorgan1</p>
-                      </div>
+                        <div className="my-2">
+                            <p><span>i-con</span> annamorgan@gmail.com</p>
+                            <p><span>i-con</span> +88017170000000</p>
+                            <p><span>i-con</span> annaMorgan1</p>
+                        </div>
                         <hr />
                     </div>
-                    
+
                     <div className="attachmentInfo">
                         <div className='d-flex justify-content-between align-items-center'>
                             <h6 className='text-align-start '>Attachments (100)</h6>
