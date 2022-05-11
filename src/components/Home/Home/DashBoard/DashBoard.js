@@ -4,8 +4,8 @@ import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt,faUserFriends,faCog,faUser,faCircleDot } from '@fortawesome/free-solid-svg-icons'; 
-import { faBell,   } from '@fortawesome/free-regular-svg-icons';
+import { faPaperPlane, faFileAlt,faUserFriends,faCog,faUser,faCircleDot,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'; 
+import { faBell,    } from '@fortawesome/free-regular-svg-icons';
  
  
 const DashBoard = () => {
@@ -15,7 +15,7 @@ const DashBoard = () => {
                 <h1 className='py-3'>Messages</h1> 
                 <div className="row gx-1">
                     <div className="chatList col-md-4">
-                        <input type="text" className='search' placeholder='Search People or Message' />
+                        <input type="text" className='search' placeholder='&#x1F50E;&#xFE0E; Search People or Message' />
                         <div className="chatType d-flex justify-content-around my-4">
                            <FontAwesomeIcon className='chatTypeIcon userIcon' icon={faUser}/>
                            <FontAwesomeIcon className='chatTypeIcon  ' icon={faUserFriends}/>
@@ -25,8 +25,8 @@ const DashBoard = () => {
                         </div>
 
 
-                        <div className="chatItemCard  d-flex justify-content-around">
-                            <img src={logo} width='80px' alt="" />
+                        <div className="chatItemCard  d-flex justify-content-around align-items-center">
+                            <img src={userAnna} width='50px' alt="" />
                             <div className="chatItemInfo my-2 mx-1">
                                 <div className="infoHead my-1 d-flex justify-content-between ">
                                     <h6 >Anna Morgan</h6>
@@ -35,8 +35,8 @@ const DashBoard = () => {
                                 <p>Lorem ipsum dolor sit amet csicing elit.</p>
                             </div>
                         </div>
-                        <div className="chatItemCard  d-flex justify-content-around">
-                            <img src={logo} width='80px' alt="" />
+                        <div className="chatItemCard  d-flex justify-content-around align-items-center">
+                            <img src={userAnna} width='50px' alt="" />
                             <div className="chatItemInfo my-2 mx-1">
                                 <div className="infoHead my-1 d-flex justify-content-between ">
                                     <h6 >Anna Morgan</h6>
@@ -45,8 +45,8 @@ const DashBoard = () => {
                                 <p>Lorem ipsum dolor sit amet csicing elit.</p>
                             </div>
                         </div>
-                        <div className="chatItemCard  d-flex justify-content-around">
-                            <img src={logo} width='80px' alt="" />
+                        <div className="chatItemCard  d-flex justify-content-around align-items-center">
+                            <img src={userAnna} width='50px' alt="" />
                             <div className="chatItemInfo my-2 mx-1">
                                 <div className="infoHead my-1 d-flex justify-content-between ">
                                     <h6 >Anna Morgan</h6>
@@ -55,8 +55,8 @@ const DashBoard = () => {
                                 <p>Lorem ipsum dolor sit amet csicing elit.</p>
                             </div>
                         </div>
-                        <div className="chatItemCard  d-flex justify-content-around">
-                            <img src={logo} width='80px' alt="" />
+                        <div className="chatItemCard  d-flex justify-content-around align-items-center">
+                            <img src={userAnna} width='50px' alt="" />
                             <div className="chatItemInfo my-2 mx-1">
                                 <div className="infoHead my-1 d-flex justify-content-between ">
                                     <h6 >Anna Morgan</h6>
