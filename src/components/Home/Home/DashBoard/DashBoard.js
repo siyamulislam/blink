@@ -1,9 +1,11 @@
 import React from 'react';
 import './Dashboard.css'
 import logo from './../../../../logo.svg'
+import user from './../../../../images/user-siam.jpg'
+import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt,faUserFriends,faCog,faUser } from '@fortawesome/free-solid-svg-icons'; 
-import { faBell,  } from '@fortawesome/free-regular-svg-icons';
+import { faPaperPlane, faFileAlt,faUserFriends,faCog,faUser,faCircleDot } from '@fortawesome/free-solid-svg-icons'; 
+import { faBell,   } from '@fortawesome/free-regular-svg-icons';
  
  
 const DashBoard = () => {
@@ -69,10 +71,10 @@ const DashBoard = () => {
                     <div className="chatText col-md-8">
                         <div className="chatUserCard d-flex justify-content-between align-items-center">
                             <div className="userInfo d-flex justify-content-start ">
-                                <img src={logo} width='80px' alt="" />
+                                <img src={userAnna} width='50px' alt="" />
                                 <div className="chatItemInfo">
                                     <h6>Anna Morgan</h6>
-                                    <p>o Online</p>
+                                    <p><FontAwesomeIcon icon={faCircleDot} size='xs' color='green'/> Online</p>
                                 </div>
                             </div>
                             <h3>:</h3>
@@ -85,7 +87,7 @@ const DashBoard = () => {
                                 <div className="senderContainer">
                                     <div className="senderCard">
                                         <div className="senderBody">
-                                            <img src={logo} className="align-self-end" width="40px" alt="" />
+                                            <img src={userAnna} className="align-self-end" width="40px" alt="" />
                                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odit corrupti nostrum quaerat facilis unde?</p>
                                             <h2 className='text-main align-self-end'>...</h2>
                                         </div>
@@ -96,7 +98,7 @@ const DashBoard = () => {
                                 <div className="senderContainer">
                                     <div className="senderCard">
                                         <div className="senderBody">
-                                            <img src={logo} className="align-self-end" width="40px" alt="" />
+                                            <img src={userAnna} className="align-self-end" width="40px" alt="" />
                                             <p>Lorem ips unde?</p>
                                             <h2 className='text-main align-self-end'>...</h2>
                                         </div>
@@ -109,7 +111,7 @@ const DashBoard = () => {
                                         <div className="receiverBody">
                                             <h2 className='text-main align-self-end'>...</h2>
                                             <p> uptatum!</p>
-                                            <img src={logo} className="align-self-end" width="40px" alt="" />
+                                            <img src={user} className="align-self-end" width="40px" alt="" />
                                         </div>
                                         <p>10:34 PM</p>
                                     </div>
@@ -119,7 +121,7 @@ const DashBoard = () => {
                                         <div className="receiverBody">
                                             <h2 className='text-main align-self-end'>...</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat corporis eius nesciunt alias voluptatum!</p>
-                                            <img src={logo} className="align-self-end" width="40px" alt="" />
+                                            <img src={user} className="align-self-end" width="40px" alt="" />
                                         </div>
                                         <p>10:34 PM</p>
                                     </div>
@@ -141,12 +143,12 @@ const DashBoard = () => {
 
 
             <div className="profile col-md-4">
-                <div className="d-flex justify-content-end p-2">
-                    <FontAwesomeIcon icon={faBell}/>
-                    <h1>Profile</h1>
+                <div className="top d-flex justify-content-end  align-items-center p-2">
+                    <FontAwesomeIcon icon={faBell} />
+                    <img src={user}   width='50px' alt="" />
                 </div>
                 <div className="body">
-                    <img src={logo} width='100px' alt="" />
+                    <img src={userAnna} width='100px' alt="" />
                     <h5>Anna Morgan</h5>
                     <h6 className='m-2'>Co-Worker</h6>
                     <p>Dhaka, Bangladesh</p>
