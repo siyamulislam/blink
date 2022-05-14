@@ -1,0 +1,32 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+
+.login .loginCard{
+    min-width: 400px; 
+}
+.login .loginCard .logo{
+    background-image: linear-gradient(#F73C65, #F5493D);
+    color: white;
+    padding: 20px;
+    font-size: 35px;
+    border-radius: 15px;
+}
+.login .loginCard .top h1{ 
+    margin: 20px ;
+}
+
+.home .sidebar .sidebarIcon {
+    display: block;
+    margin: auto;
+    color: #CED1DA;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
