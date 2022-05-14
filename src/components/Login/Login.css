@@ -6,9 +6,8 @@
     margin: 20px;
 }
 
-
 .login .loginCard{
-    min-width: 400px; 
+    min-width: 380px; 
 }
 .login .loginCard .logo{
     background-image: linear-gradient(#F73C65, #F5493D);
@@ -17,16 +16,49 @@
     font-size: 35px;
     border-radius: 15px;
 }
-.login .loginCard .top h1{ 
+.login .loginCard .brand{
+    background-image: linear-gradient(#F73C65, #F5493D);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+.login .loginCard .top h2{ 
     margin: 20px ;
 }
-
-.home .sidebar .sidebarIcon {
-    display: block;
-    margin: auto;
-    color: #CED1DA;
-    padding: 15px;
-    font-size: 30px;
-    border-radius: 15px;
-    margin-top: 15px;
+.login .loginCard .bottom { 
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px #cac5c582;
+    padding: 25px;
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.login .loginCard input { 
+    margin: 8px 0px; 
+    background-color: #F4F4F4;
+    color: #464545;
+    padding: 6px 10px;
+    border: none;
+}
+.login .loginCard input:focus{ 
+    border: none; }
+.login .loginCard button { 
+    padding: 6px;   
+    border: none; 
+    border-radius: 5px;
+}
+.login .loginCard .bottom small { 
+   text-align: start;
+   margin-left: 8px;
+   color: #A8A8A8;
+}
+.login .loginCard .loginBtn  { 
+    margin-top: 12px;
+    color: #FFFCFC;
+    background-image: linear-gradient(to right, #F73C65, #F5493D);
+}
+.login .loginCard .crateBtn  { 
+    color: #E43C3C;
+    background: transparent ;
 }
