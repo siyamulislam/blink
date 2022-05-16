@@ -4,7 +4,7 @@ import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut ,faSignOutAlt,faSignIn,faSignInAlt} from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut ,faSignOutAlt,faSignIn,} from '@fortawesome/free-solid-svg-icons';
 import { faBell, } from '@fortawesome/free-regular-svg-icons';
 import Login from '../../../Login/Login';
 import { Link } from '@mui/material';
@@ -143,8 +143,8 @@ const DashBoard = () => {
                 <div className="top d-flex justify-content-end  align-items-center p-2">
                     <FontAwesomeIcon icon={faBell} />
                     <img src={user} width='50px' alt="" />
-                    {/* <Link */}
-                    <FontAwesomeIcon  icon={faSignOut} />
+                    //logout section
+                    <FontAwesomeIcon icon={faSignOut} />
                 </div>
                 <div className="body">
                     <img src={userAnna} width='100px' alt="" />
