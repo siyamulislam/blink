@@ -27,7 +27,9 @@ h4 {
     width: 100%;
 }
 
-.Dashboard .chatList .search {
+
+/* //////////////////chatList/////////////////// */
+*/ .Dashboard .chatList .search {
     width: 100%;
     background-color: #e4d8d882;
     padding: 8px;
@@ -35,7 +37,29 @@ h4 {
     border: none;
 }
 
-.Dashboard .chatText .chatUserCard {
+.Dashboard .chatList .chatItemCard .chatItemInfo p small {
+    font-size: 9px;
+}
+
+.Dashboard .chatList .chatItemCard img {
+    border-radius: 50%;
+    margin: 5x;
+}
+
+.Dashboard .chatList .chatTypeIcon {
+    font-size: 18px;
+    color: #373737;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.Dashboard .chatList .userIcon {
+    color: #fffcfc;
+    background-image: linear-gradient(#F73C65, #F5493D);
+}
+
+/* //////////////////chatText/////////////////// */
+*/ .Dashboard .chatText .chatUserCard {
     margin: 25px;
     padding: 5px 20px;
     border-radius: 10px;
@@ -58,27 +82,6 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-.Dashboard .chatList .chatItemCard .chatItemInfo p small {
-    font-size: 9px;
-}
-
-.Dashboard .chatList .chatItemCard img {
-    border-radius: 50%;
-    margin: 5x;
-}
-
-.Dashboard .chatList .chatTypeIcon {
-    font-size: 18px;
-    color: #373737;
-    border-radius: 10px;
-    padding: 12px;
-}
-
-.Dashboard .chatList .userIcon {
-    color: #fffcfc;
-    background-image: linear-gradient(#F73C65, #F5493D);
 }
 
 .Dashboard .chatText .chatItemInfo p,
