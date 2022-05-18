@@ -3,6 +3,7 @@ import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle,faFacebook } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
 import './Login.css'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -19,7 +20,7 @@ const Login = () => {
                    <button className='loginBtn'>Login</button>
                    <button className='crateBtn'>Create an account</button>
                    <h6>or</h6> <hr />
-                   <FontAwesomeIcon className='brand' icon={faGoogle} />
+                <Link to={'/'}> <FontAwesomeIcon className='brand' icon={faGoogle} /></Link>
 
 
                 </div>

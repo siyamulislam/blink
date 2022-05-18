@@ -6,8 +6,8 @@ import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut ,faSignOutAlt,faSignIn,} from '@fortawesome/free-solid-svg-icons';
 import { faBell, } from '@fortawesome/free-regular-svg-icons';
-import Login from '../../../Login/Login';
-import { Link } from '@mui/material';
+import Login from '../../../Login/Login'; 
+import { Link } from 'react-router-dom';
 
 const DashBoard = () => {
     return (
@@ -142,9 +142,8 @@ const DashBoard = () => {
             <div className="profile col-md-4">
                 <div className="top d-flex justify-content-end  align-items-center p-2">
                     <FontAwesomeIcon icon={faBell} />
-                    <img src={user} width='50px' alt="" />
-                    //logout section
-                    <FontAwesomeIcon icon={faSignOut} />
+                    <img src={user} width='50px' alt="" />  
+                   <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
                 </div>
                 <div className="body">
                     <img src={userAnna} width='100px' alt="" />
