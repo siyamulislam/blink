@@ -18,9 +18,18 @@ const Login = () => {
                    <input type="text" placeholder='Enter Your Password' />
                    <small>Forget password</small>
                    <button className='loginBtn'>Login</button>
-                   <button className='crateBtn'>Create an account</button>
-                   <h6>or</h6> <hr />
-                <Link to={'/'}> <FontAwesomeIcon className='brand' icon={faGoogle} /></Link>
+                   <button className='crateBtn'>Create an account</button> 
+                   <div className='d-flex justify-content-between align-items-center py-1 orDiv'>
+                   <hr   /><small >or</small><hr />
+
+                   </div>
+                  
+                   <div className="googleSignIN d-flex align-items-center justify-content-center">
+                      
+                   <Link to={'/'}> <FontAwesomeIcon className='brand' icon={faGoogle} /></Link>
+                   <p className='text-white2'>Continue With Google</p>
+                   </div>
+               
 
 
                 </div>

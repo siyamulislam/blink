@@ -9,18 +9,25 @@
 .login .loginCard{
     min-width: 380px; 
 }
+.login .loginCard .orDiv hr{
+    width: 42%;
+}
+.login .loginCard .googleSignIN{
+    background-image: linear-gradient(to right, #F73C65, #F5493D);
+    border-radius: 5px;
+    cursor: pointer;
+}
 .login .loginCard .logo{
-    background-image: linear-gradient(#F73C65, #F5493D);
     color: white;
-    padding: 20px;
-    font-size: 35px;
+    padding: 5px;
+    margin-right: 12px;
+    font-size: 20px;
     border-radius: 15px;
 }
 .login .loginCard .brand{
-    background-image: linear-gradient(#F73C65, #F5493D);
     color: white;
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 20px;
     border-radius: 15px;
 }
 .login .loginCard .top h2{ 
