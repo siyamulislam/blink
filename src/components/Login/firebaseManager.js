@@ -1,5 +1,4 @@
 import * as  firebase from 'firebase/app';
-import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import firebaseConfig from '../../firebase.config';
 

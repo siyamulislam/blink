@@ -1,22 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css'
-import { Link } from 'react-router-dom';
-import { handelGoogleSignIn ,initializeLoginFramework} from './firebaseManager';
+import { handelGoogleSignIn, initializeLoginFramework } from './firebaseManager';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { UserContext } from '../../App';
 initializeLoginFramework()
 
 const Login = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const navigate = useNavigate();
     const { state } = useLocation();
-
+    console.log('user');
     const googleSignIn = () => {
         handelGoogleSignIn()
             .then(res => {
                 console.log(res)
-                // setLoggedInUser(res);
+                setLoggedInUser(res);
                 navigate(state?.path || "/")
             })
     }

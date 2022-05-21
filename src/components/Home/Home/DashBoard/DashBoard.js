@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Dashboard.css'
 import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut ,faSignOutAlt,faSignIn,} from '@fortawesome/free-solid-svg-icons';
-import { faBell, } from '@fortawesome/free-regular-svg-icons';
-import Login from '../../../Login/Login'; 
+import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut } from '@fortawesome/free-solid-svg-icons';
+import { faBell, } from '@fortawesome/free-regular-svg-icons'; 
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../../App';
 
 const DashBoard = () => {
+    // const [loggedInUser, setLoggedInUser] = useContext(UserContext); 
+    console.log('jk')
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
