@@ -130,8 +130,7 @@ const DashBoard = () => {
                             <div className="sendCard">
                                 <textarea placeholder='text message' cols="40" rows="1" className='messageText'></textarea>
                                 <FontAwesomeIcon className='fileIcon ' icon={faFileAlt} />
-                                <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} />
-                                <FontAwesomeIcon className='sendIcon' icon="fas fa-cog" />
+                                <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} /> 
                             </div>
                         </div>
 
