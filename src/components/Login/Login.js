@@ -10,6 +10,7 @@ initializeLoginFramework()
 
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+   
     const navigate = useNavigate();
     const { state } = useLocation();
     console.log('user');
@@ -25,7 +26,7 @@ const Login = () => {
         <div className='login'>
             <div className="loginCard">
                 <div className="top">
-                    <FontAwesomeIcon className='logo' icon={faCommentDots} />
+                    <FontAwesomeIcon className='logo' icon={faCommentDots} /> 
                     <h2>Login</h2>
                 </div>
                 <div className="bottom">

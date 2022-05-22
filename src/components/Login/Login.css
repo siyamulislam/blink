@@ -18,10 +18,10 @@
     cursor: pointer;
 }
 .login .loginCard .logo{
+    background-image: linear-gradient( #F73C65, #F5493D);
     color: white;
-    padding: 5px;
-    margin-right: 12px;
-    font-size: 20px;
+    padding: 20px; 
+    font-size: 35px;
     border-radius: 15px;
 }
 .login .loginCard .brand{
@@ -29,6 +29,11 @@
     padding: 8px;
     font-size: 20px;
     border-radius: 15px;
+}
+.login .loginCard .top  { 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 .login .loginCard .top h2{ 
     margin: 12px ;
