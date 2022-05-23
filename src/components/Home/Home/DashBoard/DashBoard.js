@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
 
 const DashBoard = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext); 
-    const {email, name, url} =loggedInUser;  
+    const [loggedInUser] = useContext(UserContext); 
+    const { name, url} =loggedInUser;  
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
@@ -142,7 +142,9 @@ const DashBoard = () => {
             <div className="profile col-md-4">
                 <div className="top d-flex justify-content-end  align-items-center p-2">
                     <FontAwesomeIcon icon={faBell} />
+                    <h6 className='mx-1'>{name}</h6>   
                     <img src={loggedInUser.url? url:user} width='45px' className=' mr-1' alt="" />  
+                    
                    <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
                 </div>
                 <div className="body">

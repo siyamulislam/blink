@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
-import { faGoogle, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faGoogle, } from '@fortawesome/free-brands-svg-icons';
 import React, { useContext } from 'react';
 import './Login.css'
 import { handelGoogleSignIn, initializeLoginFramework } from './firebaseManager';
@@ -10,7 +11,7 @@ initializeLoginFramework()
 
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-   
+
     const navigate = useNavigate();
     const { state } = useLocation();
     console.log('user');
