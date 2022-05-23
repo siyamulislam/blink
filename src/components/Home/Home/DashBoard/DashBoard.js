@@ -4,7 +4,7 @@ import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut,faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faUserFriends, faCog, faUser, faCircleDot,faSignOut,faEnvelope,faPhone,faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { faBell, } from '@fortawesome/free-regular-svg-icons'; 
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
@@ -87,7 +87,7 @@ const DashBoard = () => {
                                 <div className="senderContainer">
                                     <div className="senderCard">
                                         <div className="senderBody">
-                                            <img src={userAnna} className="align-self-end" width="40px" alt="" />
+                                            <img src={userAnna} className="m-1  align-self-end" width="40px" alt="" />
                                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odit corrupti nostrum quaerat facilis unde?</p>
                                             <h2 className='text-main align-self-end'>...</h2>
                                         </div>
@@ -98,7 +98,7 @@ const DashBoard = () => {
                                 <div className="senderContainer">
                                     <div className="senderCard">
                                         <div className="senderBody">
-                                            <img src={userAnna} className="align-self-end" width="40px" alt="" />
+                                            <img src={userAnna} className="m-1  align-self-end" width="40px" alt="" />
                                             <p>Lorem ips unde?</p>
                                             <h2 className='text-main align-self-end'>...</h2>
                                         </div>
@@ -111,7 +111,7 @@ const DashBoard = () => {
                                         <div className="receiverBody">
                                             <h2 className='text-main align-self-end'>...</h2>
                                             <p> uptatum!</p>
-                                            <img src={url} className="align-self-end" width="40px" alt="" />
+                                            <img src={url} className="m-1  align-self-end" width="40px" alt="" />
                                         </div>
                                         <p>10:34 PM</p>
                                     </div>
@@ -121,7 +121,7 @@ const DashBoard = () => {
                                         <div className="receiverBody">
                                             <h2 className='text-main align-self-end'>...</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat corporis eius nesciunt alias voluptatum!</p>
-                                            <img src={url} className="align-self-end " width="40px" alt="" />
+                                            <img src={url} className="m-1 align-self-end " width="40px" alt="" />
                                         </div>
                                         <p>10:34 PM</p>
                                     </div>
@@ -131,7 +131,7 @@ const DashBoard = () => {
                             </div>
                             <div className="sendCard">
                                 <textarea placeholder='text message' cols="40" rows="1" className='messageText'></textarea>
-                                <FontAwesomeIcon className='fileIcon ' icon={faFileAlt} />
+                                <FontAwesomeIcon className='fileIcon ' icon={faPaperclip} />
                                 <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} /> 
                             </div>
                         </div>

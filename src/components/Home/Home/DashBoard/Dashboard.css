@@ -81,7 +81,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: start;
 }
 
 .Dashboard .chatText .chatItemInfo p,
@@ -118,7 +118,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: flex-start;
+    align-items: start;
     margin-top: 10px;
 }
 
@@ -130,11 +130,7 @@ h4 {
 .receiverBody {
     display: flex;
     justify-content: center;
-}
-.Dashboard .chatText .messageBody .senderCard .senderBody,
-.receiverBody img {
-    margin-left: 5px;
-}
+} 
 
 .Dashboard .chatText .messageBody .senderCard .senderBody p {
     color: #373737;
@@ -155,7 +151,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: flex-end;
+    align-items: end;
     margin-top: 10px;
 }
 
@@ -198,7 +194,7 @@ h4 {
     padding: 15px;
     font-size: 25px;
     margin-right: 20px;
-    align-self: flex-end;
+    align-self: end;
 }
 
 .Dashboard .chatText .sendCard .sendIcon {
@@ -207,7 +203,7 @@ h4 {
     padding: 14px;
     font-size: 25px;
     border-radius: 50%;
-    align-self: flex-end;
+    align-self: end;
 }
 
 /* //////////////////////PROFILE///////////////////////////// */
