@@ -248,6 +248,11 @@ h4 {
 .Dashboard .profile .attachmentInfo p {
     padding: 8px 0px;
 }
+ 
+.Dashboard .profile .contactInfo .contactInfoIcon {
+   color: #8d93a2; 
+   margin-right: 5px;
+}
 
 .Dashboard .profile .attachmentInfo {
     margin: 15px 0px !important;

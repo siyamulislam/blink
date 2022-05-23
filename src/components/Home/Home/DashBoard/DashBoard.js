@@ -4,7 +4,7 @@ import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faFileAlt, faUserFriends, faCog, faUser, faCircleDot,faSignOut,faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBell, } from '@fortawesome/free-regular-svg-icons'; 
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
@@ -162,9 +162,9 @@ const DashBoard = () => {
                         </div>
                         <hr />
                         <div className="my-1">
-                            <p><span>i-con</span> annamorgan@gmail.com</p>
-                            <p><span>i-con</span> +88017170000000</p>
-                            <p><span>i-con</span> annaMorgan1</p>
+                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faEnvelope}/></span> annamorgan@gmail.com</p>
+                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faPhone}/></span> +88017170000000</p>
+                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faUser}/></span> annaMorgan1</p>
                         </div>
                         <hr />
                     </div>
