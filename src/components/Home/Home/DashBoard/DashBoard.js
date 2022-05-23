@@ -135,7 +135,6 @@ const DashBoard = () => {
                                 <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} /> 
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -143,25 +142,26 @@ const DashBoard = () => {
             <div className="profile col-md-4">
                 <div className="top d-flex justify-content-end  align-items-center p-2">
                     <FontAwesomeIcon icon={faBell} />
-                    <img src={loggedInUser.url? url:user} width='50px' className=' mr-1' alt="" />  
-                    
+                    <img src={loggedInUser.url? url:user} width='45px' className=' mr-1' alt="" />  
                    <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
                 </div>
                 <div className="body">
-                    <img src={userAnna} width='100px' alt="" />
+                   <div className="charUser">
+                   <img src={userAnna} width='70px' alt="" />
                     <h5>Anna Morgan</h5>
-                    <h6 className='m-2'>Co-Worker</h6>
+                    <h6 className='m-1'>Co-Worker</h6>
                     <p>Dhaka, Bangladesh</p>
-                    <div className='bg-main my-2'>
-                        <p className='p-1 m-4'>More Information  </p>
+                    <div className='bg-main my-1'>
+                        <p className='px-5 py-1 mx-4'>More Information  </p>
                     </div>
+                   </div>
                     <div className="contactInfo ">
                         <div className='d-flex justify-content-between align-items-center'>
                             <h6 className='text-align-start'>Contact Information </h6>
                             <p className='text-primary'>add new</p>
                         </div>
                         <hr />
-                        <div className="my-2">
+                        <div className="my-1">
                             <p><span>i-con</span> annamorgan@gmail.com</p>
                             <p><span>i-con</span> +88017170000000</p>
                             <p><span>i-con</span> annaMorgan1</p>

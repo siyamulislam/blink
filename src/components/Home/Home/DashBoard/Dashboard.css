@@ -213,7 +213,7 @@ h4 {
 /* //////////////////////PROFILE///////////////////////////// */
 .Dashboard .profile {
     /* background: rgba(185, 207, 15, 0.498); */
-    padding: 0px 25px;
+    padding: 0px 20px;
 }
 
 .Dashboard .profile .top img {
@@ -226,18 +226,22 @@ h4 {
     padding: 20px calc(5px + (50 - 5) * ((100vw - 1000px) / (1900 - 300)));
     margin: 5px;
     border-radius: 5px;
-    /* border:1px solid red;  */
     box-shadow: 5px 5px 50px #e4d8d882;
+}
+.Dashboard .profile .body  .charUser{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Dashboard .profile .body img {
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .Dashboard .profile .contactInfo {
     text-align: start;
-    margin: 20px 0px !important;
+    margin: 15px 0px !important;
 }
 
 .Dashboard .profile .contactInfo p,
@@ -246,5 +250,5 @@ h4 {
 }
 
 .Dashboard .profile .attachmentInfo {
-    margin: 20px 0px !important;
+    margin: 15px 0px !important;
 }
