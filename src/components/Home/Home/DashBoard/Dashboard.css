@@ -29,12 +29,15 @@ h4 {
 
 
 /* //////////////////chatList/////////////////// */
-*/ .Dashboard .chatList .search {
+
+#search {
     width: 100%;
     background-color: #e4d8d882;
     padding: 8px;
     border-radius: 3px;
-    border: none;
+    border: none; 
+    outline: #8dadef;
+     
 }
 
 .Dashboard .chatList .chatItemCard .chatItemInfo p small {
@@ -187,6 +190,7 @@ h4 {
     margin: 1px 10px;
     border: 1px solid #D9D9D9;
     border-radius: 10px;
+    outline: none;
 }
 
 .Dashboard .chatText .sendCard .fileIcon {

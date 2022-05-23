@@ -18,7 +18,7 @@ const DashBoard = () => {
                 <h1 className='py-3'>Messages</h1>
                 <div className="row gx-1">
                     <div className="chatList col-md-4">
-                        <input type="text" className='search' placeholder='&#x1F50E;&#xFE0E; Search People or Message' />
+                        <input type="text" id='search' placeholder='&#x1F50E;&#xFE0E; Search People or Message' />
                         <div className="chatType d-flex justify-content-around my-4">
                             <FontAwesomeIcon className='chatTypeIcon userIcon' icon={faUser} />
                             <FontAwesomeIcon className='chatTypeIcon  ' icon={faUserFriends} />
