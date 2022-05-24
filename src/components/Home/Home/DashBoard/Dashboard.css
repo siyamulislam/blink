@@ -110,66 +110,6 @@ h4 {
     border-radius: 50%;
 }
 
-.Dashboard .chatText .messageBody .senderContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.Dashboard .chatText .messageBody .senderCard {
-    max-width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 10px;
-}
-
-.Dashboard .chatText .messageBody .senderCard p {
-    padding-left: 42px;
-}
-
-.Dashboard .chatText .messageBody .senderCard .senderBody,
-.receiverBody {
-    display: flex;
-    justify-content: center;
-} 
-
-.Dashboard .chatText .messageBody .senderCard .senderBody p {
-    color: #373737;
-    padding: 15px 20px;
-    background-color: #F1F3F5;
-    border-radius: 15px;
-    margin-right: 10px !important;
-}
-
-.Dashboard .chatText .messageBody .receiverContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.Dashboard .chatText .messageBody .receiverCard {
-    max-width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: 10px;
-}
-
-.Dashboard .chatText .messageBody .receiverCard p {
-    padding-right: 42px;
-}
-
-.Dashboard .chatText .messageBody .receiverCard .receiverBody p {
-    color: #FFFCFC;
-    padding: 15px 20px;
-    border-radius: 15px;
-    background-image: linear-gradient(to right, #F73C65, #F5493D);
-    margin-left: 10px !important;
-}
-
 .Dashboard .chatText .messageBody .lastSeen hr {
     border: 1px solid #A7ACBA;
     width: 15vw;
@@ -179,7 +119,6 @@ h4 {
     display: flex;
     justify-content: flex-end;
     padding: 15px 0px;
-
 }
 
 .Dashboard .chatText .sendCard .messageText {
