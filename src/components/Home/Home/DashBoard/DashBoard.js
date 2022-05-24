@@ -10,14 +10,16 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
 
 import SocketIO from 'socket.io-client';
-const ENDPOINT = 'http://localhost:4500/';
+const ENDPOINT = '192.168.0.108:4500' ;
+// const ENDPOINT2 = 'http://localhost:4500/' ;
 
 const DashBoard = () => {
     const [loggedInUser] = useContext(UserContext);
     const { name, url } = loggedInUser; 
-    const socket = SocketIO(ENDPOINT, { transports: ['websocket'] });
-
+   
     useEffect(() => {
+        const socket = SocketIO(ENDPOINT, { transports: ['websocket'] });
+
         socket.on('connect', () => {
             console.log('connected');
         })
@@ -31,11 +33,17 @@ const DashBoard = () => {
         socket.on('userJoined',(data)=>{
             console.log(data.user,data.message);
         })
+        socket.on('userLeft',(data)=>{
+            console.log(data.user,data.message);
+        })
+
+
 
         return () => {
-           
+           socket.emit('disconnect');
+           socket.off();
         };
-    }, []);
+    },  );
 
 
   
