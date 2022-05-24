@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Dashboard.css'
 import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
@@ -10,18 +10,20 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
 
 import SocketIO from 'socket.io-client';
-const ENDPOINT = '192.168.0.108:4500' ;
+const ENDPOINT = 'http://192.168.0.108:4500' ;
 // const ENDPOINT2 = 'http://localhost:4500/' ;
+let socket;
 
 const DashBoard = () => {
     const [loggedInUser] = useContext(UserContext);
     const { name, url } = loggedInUser; 
+    const [id,setId]= useState('');
    
     useEffect(() => {
-        const socket = SocketIO(ENDPOINT, { transports: ['websocket'] });
-
+         socket = SocketIO(ENDPOINT, { transports: ['websocket'] });
         socket.on('connect', () => {
             console.log('connected');
+            setId(socket.id)
         })
         console.log(socket)
 
@@ -36,16 +38,30 @@ const DashBoard = () => {
         socket.on('userLeft',(data)=>{
             console.log(data.user,data.message);
         })
-
-
-
         return () => {
-           socket.emit('disconnect');
+           socket.emit('disconnected');
            socket.off();
         };
-    },  );
+    }, [loggedInUser] );
+
+    useEffect(() => {
+        socket.on('sendMessage',(data)=>{
+            console.log(data.user,data.message,data.id);
+        });
+
+        return () => {
+             
+        };
+    }, );
 
 
+    const sendMessage=()=>{
+
+       const message=document.getElementById('txtMessage').value;
+
+        socket.emit('message',{message,id})
+        document.getElementById('txtMessage').value=''
+    }
   
     
 
@@ -121,6 +137,7 @@ const DashBoard = () => {
                                 <div className="lastSeen d-flex justify-content-between align-items-center">
                                     <hr /><p className='text-main'>Today</p><hr />
                                 </div>
+                                
                                 <div className="senderContainer">
                                     <div className="senderCard">
                                         <div className="senderBody">
@@ -167,9 +184,9 @@ const DashBoard = () => {
 
                             </div>
                             <div className="sendCard">
-                                <textarea placeholder='text message' cols="40" rows="1" className='messageText'></textarea>
+                                <textarea placeholder='text message' cols="40" rows="1" id='txtMessage' className='messageText'></textarea>
                                 <FontAwesomeIcon className='fileIcon ' icon={faPaperclip} />
-                                <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} />
+                                <FontAwesomeIcon onClick={()=>{sendMessage()}} className='sendIcon' icon={faPaperPlane} />
                             </div>
                         </div>
                     </div>
