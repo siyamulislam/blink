@@ -1,17 +1,46 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './Dashboard.css'
 import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faUserFriends, faCog, faUser, faCircleDot,faSignOut,faEnvelope,faPhone,faPaperclip } from '@fortawesome/free-solid-svg-icons';
-import { faBell, } from '@fortawesome/free-regular-svg-icons'; 
+import { faPaperPlane, faUserFriends, faCog, faUser, faCircleDot, faSignOut, faEnvelope, faPhone, faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { faBell, } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
 
+import SocketIO from 'socket.io-client';
+const ENDPOINT = 'http://localhost:4500/';
+
 const DashBoard = () => {
-    const [loggedInUser] = useContext(UserContext); 
-    const { name, url} =loggedInUser;  
+    const [loggedInUser] = useContext(UserContext);
+    const { name, url } = loggedInUser; 
+    const socket = SocketIO(ENDPOINT, { transports: ['websocket'] });
+
+    useEffect(() => {
+        socket.on('connect', () => {
+            console.log('connected');
+        })
+        console.log(socket)
+
+        socket.emit('joined',{loggedInUser})
+
+        socket.on('welcome',(data)=>{
+            console.log(data.user,data.message);
+        })
+        socket.on('userJoined',(data)=>{
+            console.log(data.user,data.message);
+        })
+
+        return () => {
+           
+        };
+    }, []);
+
+
+  
+    
+
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
@@ -25,7 +54,7 @@ const DashBoard = () => {
                             <FontAwesomeIcon className='chatTypeIcon  ' icon={faCog} />
                             <div>
                             </div>
-                        </div> 
+                        </div>
 
                         <div className="chatItemCard  d-flex justify-content-around align-items-center">
                             <img src={userAnna} width='50px' alt="" />
@@ -132,7 +161,7 @@ const DashBoard = () => {
                             <div className="sendCard">
                                 <textarea placeholder='text message' cols="40" rows="1" className='messageText'></textarea>
                                 <FontAwesomeIcon className='fileIcon ' icon={faPaperclip} />
-                                <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} /> 
+                                <FontAwesomeIcon className='sendIcon' icon={faPaperPlane} />
                             </div>
                         </div>
                     </div>
@@ -142,21 +171,21 @@ const DashBoard = () => {
             <div className="profile col-md-4">
                 <div className="top d-flex justify-content-end  align-items-center p-2">
                     <FontAwesomeIcon icon={faBell} />
-                    <h6 className='mx-1'>{name}</h6>   
-                    <img src={loggedInUser.url? url:user} width='45px' className=' mr-1' alt="" />  
-                    
-                   <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
+                    <h6 className='mx-1'>{name}</h6>
+                    <img src={loggedInUser.url ? url : user} width='45px' className=' mr-1' alt="" />
+
+                    <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
                 </div>
                 <div className="body">
-                   <div className="charUser">
-                   <img src={userAnna} width='70px' alt="" />
-                    <h5>Anna Morgan</h5>
-                    <h6 className='m-1'>Co-Worker</h6>
-                    <p>Dhaka, Bangladesh</p>
-                    <div className='bg-main my-1'>
-                        <p className='px-5 py-1 mx-4'>More Information  </p>
+                    <div className="charUser">
+                        <img src={userAnna} width='70px' alt="" />
+                        <h5>Anna Morgan</h5>
+                        <h6 className='m-1'>Co-Worker</h6>
+                        <p>Dhaka, Bangladesh</p>
+                        <div className='bg-main my-1'>
+                            <p className='px-5 py-1 mx-4'>More Information  </p>
+                        </div>
                     </div>
-                   </div>
                     <div className="contactInfo ">
                         <div className='d-flex justify-content-between align-items-center'>
                             <h6 className='text-align-start'>Contact Information </h6>
@@ -164,9 +193,9 @@ const DashBoard = () => {
                         </div>
                         <hr />
                         <div className="my-1">
-                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faEnvelope}/></span> annamorgan@gmail.com</p>
-                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faPhone}/></span> +88017170000000</p>
-                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faUser}/></span> annaMorgan1</p>
+                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faEnvelope} /></span> annamorgan@gmail.com</p>
+                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faPhone} /></span> +88017170000000</p>
+                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faUser} /></span> annaMorgan1</p>
                         </div>
                         <hr />
                     </div>
