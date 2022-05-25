@@ -4,7 +4,7 @@ import userAnna from '../../../../../images/anna-morgan.jpg'
 import userIMG from '../../../../../images/user-siam.jpg'
 
 const Message = (props) => {
-    const { user, message, self } = props.data; 
+    const { user, message, self } = props.data;
     return (
         <div className="message">
             {self ?
@@ -31,11 +31,7 @@ const Message = (props) => {
                 </div>
             }
 
-
         </div>
-
-
-
     );
 };
 

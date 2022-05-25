@@ -35,15 +35,15 @@ const DashBoard = () => {
 
         socket.on('welcome', (data) => {
             console.log(data.user, data.message);
-            setMessages([...messages,data]);
+            setMessages([...messages, data]);
         })
         socket.on('userJoined', (data) => {
             console.log(data.user, data.message);
-            setMessages([...messages,data]);
+            setMessages([...messages, data]);
         })
         socket.on('leave', (data) => {
             console.log(data.user, data.message);
-            setMessages([...messages,data]);
+            setMessages([...messages, data]);
         })
         return () => {
             socket.emit('disconnected');
@@ -54,25 +54,21 @@ const DashBoard = () => {
     useEffect(() => {
         socket.on('sendMessage', (data) => {
             console.log(data.user, data.message, data.id);
-            data.id===id? data.self=true:data.self=false;
-            setMessages([...messages,data]);
+            data.id === id ? data.self = true : data.self = false;
+            setMessages([...messages, data]);
         });
 
         return () => {
             socket.off()
-
         };
-    },[messages]);
+    }, [messages]);
 
 
     const sendMessage = () => {
-
         const message = document.getElementById('txtMessage').value;
         socket.emit('message', { message, id })
         document.getElementById('txtMessage').value = ''
     }
-
-
 
     return (
         <div className='Dashboard row'>
@@ -146,11 +142,9 @@ const DashBoard = () => {
                                 <div className="lastSeen d-flex justify-content-between align-items-center">
                                     <hr /><p className='text-main'>Today</p><hr />
                                 </div>
-
                                 {
-                                    messages.map((item,i)=>  <Message key={i} data={item}></Message>)
-                                } 
-
+                                    messages.map((item, i) => <Message key={i} data={item}></Message>)
+                                }
                             </ReactScrollToBottom>
                             <div className="sendCard">
                                 <textarea placeholder='text message' cols="40" rows="1" id='txtMessage' className='messageText'></textarea>
@@ -167,7 +161,6 @@ const DashBoard = () => {
                     <FontAwesomeIcon icon={faBell} />
                     <h6 className='mx-1'>{name}</h6>
                     <img src={loggedInUser.url ? url : user} width='45px' className=' mr-1' alt="" />
-
                     <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
                 </div>
                 <div className="body">

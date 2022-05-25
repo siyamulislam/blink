@@ -35,9 +35,9 @@ h4 {
     background-color: #e4d8d882;
     padding: 8px;
     border-radius: 3px;
-    border: none; 
+    border: none;
     outline: #8dadef;
-     
+
 }
 
 .Dashboard .chatList .chatItemCard .chatItemInfo p small {
@@ -153,7 +153,7 @@ h4 {
 .Dashboard .profile {
     /* background: rgba(185, 207, 15, 0.498); */
     padding: 0px 20px;
-    
+
 }
 
 .Dashboard .profile .top img {
@@ -168,10 +168,11 @@ h4 {
     border-radius: 5px;
     box-shadow: 5px 5px 50px #e4d8d882;
 }
-.Dashboard .profile .body  .charUser{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.Dashboard .profile .body .charUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Dashboard .profile .body img {
@@ -188,10 +189,10 @@ h4 {
 .Dashboard .profile .attachmentInfo p {
     padding: 8px 0px;
 }
- 
+
 .Dashboard .profile .contactInfo .contactInfoIcon {
-   color: #8d93a2; 
-   margin-right: 5px;
+    color: #8d93a2;
+    margin-right: 5px;
 }
 
 .Dashboard .profile .attachmentInfo {
