@@ -200,6 +200,7 @@ const DashBoard = () => {
                         <img src={logo} width='100px' alt="" />
                         <img src={logo} width='100px' alt="" />
                         <hr />
+                        
                     </div>
                 </div>
             </div>
