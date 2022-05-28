@@ -30,7 +30,7 @@ const DashBoard = () => {
             setId(socket.id)
         })
         console.log(socket)
-
+        
         socket.emit('joined', { loggedInUser })
 
         socket.on('welcome', (data) => {
@@ -63,13 +63,11 @@ const DashBoard = () => {
         };
     }, [messages]);
 
-
     const sendMessage = () => {
         const message = document.getElementById('txtMessage').value;
         socket.emit('message', { message, id })
         document.getElementById('txtMessage').value = ''
     }
-
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
@@ -199,8 +197,7 @@ const DashBoard = () => {
                         <img src={logo} width='100px' alt="" />
                         <img src={logo} width='100px' alt="" />
                         <img src={logo} width='100px' alt="" />
-                        <hr />
-                        
+                        <hr />   
                     </div>
                 </div>
             </div>
