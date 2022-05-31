@@ -33,10 +33,24 @@ const DashBoard = () => {
         
         socket.emit('joined', { loggedInUser })
 
+       
+      
+        return () => {
+            socket.emit('disconnected');
+            socket.off();
+        };
+    }, []);
+
+    useEffect(() => {
+        socket.on('sendMessage', (data) => {
+            console.log(data.user, data.message, data.id);
+            data.id === id ? data.self = true : data.self = false;
+            setMessages([...messages, data]);
+        });
         socket.on('welcome', (data) => {
             console.log(data.user, data.message);
             setMessages([...messages, data]);
-        })
+        });
         socket.on('userJoined', (data) => {
             console.log(data.user, data.message);
             setMessages([...messages, data]);
@@ -45,18 +59,6 @@ const DashBoard = () => {
             console.log(data.user, data.message);
             setMessages([...messages, data]);
         })
-        return () => {
-            socket.emit('disconnected');
-            socket.off();
-        };
-    }, [loggedInUser]);
-
-    useEffect(() => {
-        socket.on('sendMessage', (data) => {
-            console.log(data.user, data.message, data.id);
-            data.id === id ? data.self = true : data.self = false;
-            setMessages([...messages, data]);
-        });
 
         return () => {
             socket.off()
