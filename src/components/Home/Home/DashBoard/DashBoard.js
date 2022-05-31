@@ -13,7 +13,7 @@ import SocketIO from 'socket.io-client';
 import Message from './Message/Message';
 
 import ReactScrollToBottom from 'react-scroll-to-bottom';
-const ENDPOINT = 'http://192.168.0.108:4500';
+const ENDPOINT = 'http://192.168.0.113:4500';
 // const ENDPOINT2 = 'http://localhost:4500/' ;
 let socket;
 
