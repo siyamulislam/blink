@@ -25,3 +25,9 @@
     background-image: linear-gradient(#F73C65, #F5493D);
     color: white;
 }
+@media(max-width:768px){
+    .home .sidebar .sidebarIcon {
+        display: inline;  
+        padding: 5px 25px;   
+    }
+}

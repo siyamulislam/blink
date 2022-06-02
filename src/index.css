@@ -1,3 +1,6 @@
+html{
+  font-size: 62.5%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,8 +8,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
- 
 }
 
 code {
@@ -16,7 +17,7 @@ code {
 a{
   text-decoration: none;
 }
-ul , dl,ol{list-style: none;}
+ul, dl,ol{list-style: none;}
 
 hr{
   margin: 0.2rem !important;
@@ -30,9 +31,16 @@ hr{
 .text-main{
   color: #A3A9B7; 
 }
+
 p,h6,small{
   margin: 0px !important;
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media(max-width:768px){
+  html{
+    font-size: 50.5%;
+  }
 }
