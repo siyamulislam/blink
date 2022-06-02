@@ -73,7 +73,15 @@ const DashBoard = () => {
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-8">
-                <h1 className='py-3'>Messages</h1>
+               <div className="header d-flex justify-content-between">
+               <h1 className='py-3'>Messages</h1>
+                <div className="right d-flex justify-content-end  align-items-center p-2">
+                    <FontAwesomeIcon icon={faBell} />
+                    <h6 className='mx-1'>{name}</h6>
+                    <img src={loggedInUser.url ? url : user} width='45px' className=' mr-1' alt="" />
+                    <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
+                </div>
+               </div>
                 <div className="row gx-1">
                     <div className="chatList col-md-4">
                         <input type="text" id='search' placeholder='&#x1F50E;&#xFE0E; Search People or Message' />
@@ -157,12 +165,6 @@ const DashBoard = () => {
             </div>
 
             <div className="profile col-md-4">
-                <div className="top d-flex justify-content-end  align-items-center p-2">
-                    <FontAwesomeIcon icon={faBell} />
-                    <h6 className='mx-1'>{name}</h6>
-                    <img src={loggedInUser.url ? url : user} width='45px' className=' mr-1' alt="" />
-                    <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
-                </div>
                 <div className="body">
                     <div className="charUser">
                         <img src={userAnna} width='70px' alt="" />

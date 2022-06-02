@@ -26,6 +26,11 @@ h4 {
     color: #373737;
     width: 100%;
 }
+.Dashboard .chat .right img {
+    margin-left: 25px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
 
 
 /* //////////////////chatList/////////////////// */
@@ -156,12 +161,6 @@ h4 {
 
 }
 
-.Dashboard .profile .top img {
-    margin-left: 25px;
-    margin-right: 10px;
-    border-radius: 12px;
-}
-
 .Dashboard .profile .body {
     padding: 20px calc(5px + (50 - 5) * ((100vw - 1000px) / (1900 - 300)));
     margin: 5px;
@@ -197,4 +196,6 @@ h4 {
 
 .Dashboard .profile .attachmentInfo {
     margin: 15px 0px !important;
+}
+@media(max-width:768px){
 }
