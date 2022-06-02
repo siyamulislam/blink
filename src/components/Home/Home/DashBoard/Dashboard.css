@@ -1,6 +1,5 @@
 .Dashboard .chat {
-    /* background: rgba(227, 132, 159, 0.498); */
-    padding: 5px;
+    padding: 5px 25px;
     text-align: start;
 }
 
@@ -9,7 +8,6 @@
 }
 
 .Dashboard .chatList {
-    /* background: rgba(23, 8, 111, 0.498); */
     padding: 8px;
     border-radius: 10px;
     box-shadow: 8px 8px 15px #cac5c582;
@@ -32,7 +30,6 @@ h4 {
     border-radius: 12px;
 }
 
-
 /* //////////////////chatList/////////////////// */
 
 #search {
@@ -42,7 +39,6 @@ h4 {
     border-radius: 3px;
     border: none;
     outline: #8dadef;
-
 }
 
 .Dashboard .chatList .chatItemCard .chatItemInfo p small {
@@ -153,8 +149,6 @@ h4 {
     border-radius: 50%;
     align-self: flex-end;
 }
-
-/* //////////////////////PROFILE///////////////////////////// */
 
 @media(max-width:768px){
 }
