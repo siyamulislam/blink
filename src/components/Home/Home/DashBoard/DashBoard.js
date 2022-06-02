@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './Dashboard.css'
-import logo from './../../../../logo.svg'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faUserFriends, faCog, faUser, faCircleDot, faSignOut, faEnvelope, faPhone, faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faUserFriends, faCog, faUser, faCircleDot, faSignOut, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { faBell, } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
@@ -13,6 +12,7 @@ import SocketIO from 'socket.io-client';
 import Message from './Message/Message';
 
 import ReactScrollToBottom from 'react-scroll-to-bottom';
+import Profile from './Profile/Profile';
 const ENDPOINT = 'http://192.168.0.113:4500';
 // const ENDPOINT2 = 'http://localhost:4500/' ;
 let socket;
@@ -72,7 +72,7 @@ const DashBoard = () => {
     }
     return (
         <div className='Dashboard row'>
-            <div className="chat col-md-8">
+            <div className="chat col-md-12">
                <div className="header d-flex justify-content-between">
                <h1 className='py-3'>Messages</h1>
                 <div className="right d-flex justify-content-end  align-items-center p-2">
@@ -83,7 +83,7 @@ const DashBoard = () => {
                 </div>
                </div>
                 <div className="row gx-1">
-                    <div className="chatList col-md-4">
+                    <div className="chatList col-md-3">
                         <input type="text" id='search' placeholder='&#x1F50E;&#xFE0E; Search People or Message' />
                         <div className="chatType d-flex justify-content-around my-4">
                             <FontAwesomeIcon className='chatTypeIcon userIcon' icon={faUser} />
@@ -134,7 +134,7 @@ const DashBoard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="chatText col-md-8">
+                    <div className="chatText col-md-9">
                         <div className="chatUserCard d-flex justify-content-between align-items-center">
                             <div className="userInfo d-flex justify-content-start ">
                                 <img src={userAnna} width='50px' alt="" />
@@ -163,48 +163,8 @@ const DashBoard = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="profile col-md-4">
-                <div className="body">
-                    <div className="charUser">
-                        <img src={userAnna} width='70px' alt="" />
-                        <h5>Anna Morgan</h5>
-                        <h6 className='m-1'>Co-Worker</h6>
-                        <p>Dhaka, Bangladesh</p>
-                        <div className='bg-main my-1'>
-                            <p className='px-5 py-1 mx-4'>More Information  </p>
-                        </div>
-                    </div>
-                    <div className="contactInfo ">
-                        <div className='d-flex justify-content-between align-items-center'>
-                            <h6 className='text-align-start'>Contact Information </h6>
-                            <p className='text-primary'>add new</p>
-                        </div>
-                        <hr />
-                        <div className="my-1">
-                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faEnvelope} /></span> annamorgan@gmail.com</p>
-                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faPhone} /></span> +88017170000000</p>
-                            <p><span><FontAwesomeIcon className='contactInfoIcon' icon={faUser} /></span> annaMorgan1</p>
-                        </div>
-                        <hr />
-                    </div>
-
-                    <div className="attachmentInfo">
-                        <div className='d-flex justify-content-between align-items-center'>
-                            <h6 className='text-align-start '>Attachments (100)</h6>
-                            <p className='text-primary'>view all</p>
-                        </div>
-                        <hr />
-                        <img src={logo} width='100px' alt="" />
-                        <img src={logo} width='100px' alt="" />
-                        <img src={logo} width='100px' alt="" />
-                        <img src={logo} width='100px' alt="" />
-                        <img src={logo} width='100px' alt="" />
-                        <img src={logo} width='100px' alt="" />
-                        <hr />   
-                    </div>
-                </div>
-            </div>
+                         
+            
         </div>
     );
 };
