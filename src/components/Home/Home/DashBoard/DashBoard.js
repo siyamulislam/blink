@@ -12,7 +12,6 @@ import SocketIO from 'socket.io-client';
 import Message from './Message/Message';
 
 import ReactScrollToBottom from 'react-scroll-to-bottom';
-import Profile from './Profile/Profile';
 const ENDPOINT = 'http://192.168.0.113:4500';
 // const ENDPOINT2 = 'http://localhost:4500/' ;
 let socket;
@@ -32,8 +31,6 @@ const DashBoard = () => {
         console.log(socket)
         
         socket.emit('joined', { loggedInUser })
-
-       
       
         return () => {
             socket.emit('disconnected');
@@ -59,7 +56,6 @@ const DashBoard = () => {
             console.log(data.user, data.message);
             setMessages([...messages, data]);
         })
-
         return () => {
             socket.off()
         };
@@ -162,9 +158,7 @@ const DashBoard = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-                         
-            
+            </div>               
         </div>
     );
 };

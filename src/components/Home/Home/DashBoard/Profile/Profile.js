@@ -35,7 +35,7 @@ const Profile = () => {
             <div className="attachmentInfo">
                 <div className='d-flex justify-content-between align-items-center'>
                     <h6 className='text-align-start '>Attachments (100)</h6>
-                    <p className='text-primary'>view all</p>
+                    <p className='text-primary'>view all</p> 
                 </div>
                 <hr />
                 <img src={logo} width='100px' alt="" />
