@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Dashboard.css'
 import user from './../../../../images/user-siam.jpg'
 import userAnna from './../../../../images/anna-morgan.jpg'
+import showMore from './../../../../images/showMore.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faUserFriends, faCog, faUser, faCircleDot, faSignOut, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { faBell, } from '@fortawesome/free-regular-svg-icons';
@@ -29,9 +30,9 @@ const DashBoard = () => {
             setId(socket.id)
         })
         console.log(socket)
-        
+
         socket.emit('joined', { loggedInUser })
-      
+
         return () => {
             socket.emit('disconnected');
             socket.off();
@@ -69,15 +70,15 @@ const DashBoard = () => {
     return (
         <div className='Dashboard row'>
             <div className="chat col-md-12">
-               <div className="header d-flex justify-content-between">
-               <h1 className='py-3'>Messages</h1>
-                <div className="right d-flex justify-content-end  align-items-center p-2">
-                    <FontAwesomeIcon icon={faBell} />
-                    <h6 className='mx-1'>{name}</h6>
-                    <img src={loggedInUser.url ? url : user} width='45px' className=' mr-1' alt="" />
-                    <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
+                <div className="header d-flex justify-content-between">
+                    <h1 className='py-3'>Messages</h1>
+                    <div className="right d-flex justify-content-end  align-items-center p-2">
+                        <FontAwesomeIcon icon={faBell} />
+                        <h6 className='mx-1'>{name}</h6>
+                        <img src={loggedInUser.url ? url : user} width='45px' className=' mr-1' alt="" />
+                        <Link to={'/login'}> <FontAwesomeIcon icon={faSignOut} /></Link>
+                    </div>
                 </div>
-               </div>
                 <div className="row gx-1">
                     <div className="chatList col-md-3">
                         <input type="text" id='search' placeholder='&#x1F50E;&#xFE0E; Search People or Message' />
@@ -135,11 +136,11 @@ const DashBoard = () => {
                             <div className="userInfo d-flex justify-content-start ">
                                 <img src={userAnna} width='50px' alt="" />
                                 <div className="chatItemInfo">
-                                    <h6>Anna Morgan</h6>
+                                    <h4>Anna Morgan</h4>
                                     <p><FontAwesomeIcon icon={faCircleDot} size='xs' color='green' /> Online</p>
                                 </div>
                             </div>
-                            <h3>:</h3>
+                            <img src={showMore} height="20rem" alt="" />
                         </div>
                         <div className="messageCard">
                             <ReactScrollToBottom className="messageBody">
@@ -158,7 +159,7 @@ const DashBoard = () => {
                         </div>
                     </div>
                 </div>
-            </div>               
+            </div>
         </div>
     );
 };
